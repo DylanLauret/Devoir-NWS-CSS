@@ -1,0 +1,199 @@
+
+/* Méthode BEM CSS */
+
+body {
+    margin:0;
+    padding:0;
+}
+
+/* Variables utilisées */
+:root {
+    --bg-color-red:  #b93535;
+    --bg-color-lightred:  #db6161;
+    --bg-color-green: #4CAF50;
+    --bg-color-black: #2c2c2c;
+    --bg-color-blue: #1979b1;
+    --bg-color-lightblue: #4da9df;
+    --color-white:#f1f1f1;
+    --color-grey:#ccc;
+    --font-size-button:16px;
+    --font-size-description:14px;
+    --font-size-title:30px;
+    --font-size-price:25px;
+}
+ 
+
+section { /* structuré le rendu de façon centré sur la page (pas de rapport avec la demande juste pour organisé le travail) */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+/* ----- Premier Rendu ----- */
+
+
+/* Permet d'aligner et de centrer l'écriture dans les différents boutons */
+.componentButton { 
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+/* Style des boutons en général */
+.componentButton--Button {
+    color: var(--color-white);
+    padding: 15px 32px;
+    font-size: var(--font-size-button);
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+/* Bouton variante "Vert" */
+.componentButton--Button_green {background-color: var(--bg-color-green);}
+
+/* Bouton variante "Rouge" */
+.componentButton--Button_red {background-color: var(--bg-color-red);}
+
+/* Bouton variante "Petit" */
+.componentButton--Button_little {
+    background-color: var(--bg-color-black);
+    width:20px;
+    height:10px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Bouton variante "Grand" */
+.componentButton--Button_big {
+    background-color: var(--bg-color-black);
+    width: 300px;
+    height:150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ----- Deuxième Rendu ----- */
+
+
+/* Style des blocs alerte en général */
+.componentAlert--Alert {
+    width: 500px;
+    margin: 10px;
+    height:4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* bloc alerte variante "Info" */
+.componentAlert--Alert_Info {
+    background-color:var(--bg-color-blue);
+    color:var(--color-white);
+}
+
+/* bloc alerte variante "Succès" */
+.componentAlert--Alert_Success {
+    background-color:var(--bg-color-green);
+    color:var(--color-white);
+}
+
+/* bloc alerte variante "Error" */
+.componentAlert--Alert_Error {
+    border: var(--bg-color-lightred);
+    background-color: var(--bg-color-red);
+    color:var(--color-white);  
+}
+
+
+/* ----- Troisième Rendu ----- */
+
+
+/* Style de l'élément "Photo" */
+.componentProduct--Element_Photo {
+    background-color: var(--bg-color-green);    
+    background-image:url('/img/ordinateurDell.jpeg'); /* Je n'arrive pas à afficher la photo je ne vois pas où est le problème */
+    width:500px;
+    height:300px;
+    display:flex;
+    justify-content:center;
+    align-items: center; 
+}
+
+/* Style de l'élément "Titre" */
+.componentProduct--Element_Title{
+    font-size: var(--font-size-title);
+}
+
+/* Style de l'élément "Description" */
+.componentProduct--Element_Description{
+    font-size:var(--font-size-description);
+}
+
+/* Style de l'élément "Prix" */
+.componentProduct--Product_Price {
+    font-size: var(--font-size-price);
+    font-weight: bold;
+    margin: 5px 0px;
+}
+
+/* Style de l'élément "Bouton Ajouter au panier" */
+.componentProduct--Product_Button {
+    color: var(--color-white);
+    padding: 15px 32px;
+    text-align: center;
+    font-size: var(--font-size-button);
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color:var(--bg-color-green);
+    color:var(--color-white);
+    border: none;
+}
+
+/* ----- Quatrième Rendu ----- */
+
+/* Style du bloc newsletter */
+.componentNewsletter {border: 3px solid var(--color-white);}
+  
+/* Style de l'élément container de la newsletter */
+.componentNewsletter--container {
+    padding: 20px;
+    background-color: var(--color-white);
+}
+
+/* Style de l'élément "Title" de la newsletter */
+.componentNewsletter--container_Title{
+    font-size: var(--font-size-title);
+}
+
+/* Style de l'élément "Description" de la newsletter */
+.componentNewsletter--container_Description{
+    font-size: var(--font-size-description);
+    font-weight: bold;
+}
+
+/* Style des éléments avec la balise "Input" de la newsletter */
+.componentNewsletter--Input{
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid var(--color-grey);
+    box-sizing: border-box; 
+}
+
+/* Style de l'élément "Checkbox" de la newsletter */
+.componentNewsletter--container_Checkbox{margin-top: 16px;}
+
+/* Style de l'élément bouton "S'inscrire" de la newsletter */  
+.componentNewsletter--container_Button {
+    background-color:var(--bg-color-green);
+    color:var(--color-white);
+    border: none;
+  }
+
+/* Comportement 'hover' de l'élément bouton "S'inscrire" de la newsletter */ 
+.componentNewsletter--container_Button:hover {opacity: 0.8;}

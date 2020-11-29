@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Exercice Composant</title>
+</head>
+<body>
+
+    <!-- Premier rendu demandé -->
+    
+    <section>
+
+        <h1>Composant Bouton</h1>
+       
+        <!-- Le Bloc -->
+
+        <div class="componentButton">
+
+            <!-- Les éléments -->
+
+            <button class="componentButton--Button componentButton--Button_green"> Bouton Vert</button>
+            <button class="componentButton--Button componentButton--Button_red"> Bouton Rouge</button>
+            <button class="componentButton--Button componentButton--Button_little"> Bouton Petit</button>
+            <button class="componentButton--Button componentButton--Button_big"> Bouton Grand</button>
+
+        </div>
+        
+
+    </section>
+
+<hr>
+
+    <!-- Deuxième rendu demandé -->
+
+    <section>
+
+        <h1>Composant Alerte</h1>
+        
+         <!-- Le Bloc -->
+
+        <div class="componentAlert">
+            
+            <!-- Les éléments -->
+
+            <div class="componentAlert--Alert componentAlert--Alert_Info">Info ?</div>
+            <div class="componentAlert--Alert componentAlert--Alert_Success">Succès !</div>
+            <div class="componentAlert--Alert componentAlert--Alert_Error"> ! Error !</div>
+
+
+        </div>
+
+    </section>
+
+<hr>
+
+    <!-- Troisième rendu demandé -->
+
+    <section>
+
+        <h1>Composant Carte Produit</h1>
+  
+        <!-- Le Bloc -->
+
+        <div class="componentProduct">
+                    
+            <!-- Les éléments -->
+
+            <div class="componentProduct--Element componentProduct--Element_Photo">Photo</div> <!-- Voir style.css (.componentProduct--Element_Photo) Je n'arrive pas à afficher la photo, j'ai mis un background-color pour afficher l'emplacement au moins-->
+
+            <h2 class="componentProduct--Element componentProduct--Element_Title">Dell version 2020</h2>
+
+            <p class="componentProduct--Product componentProduct--Product_Price">1500€</p>
+            
+            <p class="componentProduct--Element componentProduct--Element_Description"> 
+                Lorem ipsum dolor sit, amet consectetur adipisicing elit.<br> Incidunt autem fuga 
+                accusantium blanditiis? <br>Tempora modi perspiciatis fugiat necessitatibus, sequi
+                nobis id debitis libero consequuntur,<br> nesciunt rem deleniti, odit ut corrupti.</p>
+
+            <button class="componentProduct--Product componentProduct--Product_Button">Ajouter au Panier</button>
+
+        </div>
+
+    </section>
+
+<hr>
+
+    <!-- Quatrième rendu demandé -->
+    <section>
+
+        <h1>Composant Bloc Newsletter</h1>
+
+        <!--Formulaire qui permet de s'incrire à une newsletter et qui sera géré par la suite par un fichier .php-->
+
+        <form action="" class="componentNewsletter"> 
+             
+            <!-- Le Bloc -->
+
+            <div class="componentNewsletter--container">
+
+                <!-- Les éléments -->
+
+                <h2 class="componentNewsletter--container_Title">Inscription à la Newsletter</h2>
+                <p class="componentNewsletter--container_Description" >Remplissez ce formulaire pour souscrire à un abonnement à notre newsletter !</p>
+          
+            </div>
+        
+           <!-- Le Bloc -->
+
+            <div class="componentNewsletter--container" style="background-color:white">
+
+                <!-- Les éléments -->
+
+                <input class="componentNewsletter--Input componentNewsletter--container_Surname" type="text" placeholder="Nom" name="Surname" required>
+                <input class="componentNewsletter--Input componentNewsletter--container_Name" type="text" placeholder="Prenom" name="name" required>
+                <input class="componentNewsletter--Input componentNewsletter--container_Email" type="text" placeholder="Adresse Email" name="mail" required>
+                <label>
+                <input class="componentNewsletter--container_Checkbox" type="checkbox" checked="checked" name="subscribe"> Recevoir la newsletter de façon quotidienne.
+                </label>
+
+          </div>
+        
+          <!-- Le Bloc -->
+          
+            <div class="componentNewsletter--container">
+
+                <!-- Les éléments -->
+                <input class="componentNewsletter--Input componentNewsletter--container_Button" type="submit" value="S'inscrire">
+
+            </div>
+
+        </form>  
+
+    </section>
+    
+</body>
+</html>
